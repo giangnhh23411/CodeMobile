@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">K23411Tapp</string>
     <string name="str_welcome">Chào mừng đến với K23411T!</string>
     <string name="str_close">ĐÓNG</string>
-    <string name="str_click_me">NHẤN VÀO TÔI</string>
     <string name="str_university">Trường Đại học Kinh tế - Luật</string>
-    <string name="str_major">Ngành học</string>
-    <string name="str_my_major">Khoa học dữ liệu</string>
     <string name="str_login_system">ĐĂNG NHẬP HỆ THỐNG</string>
     <string name="str_username">Tên đăng nhập: </string>
     <string name="str_hint_username">Nhập tên đăng nhập</string>
@@ -46,13 +42,11 @@
     <string name="str_confirm_delete_title">Xác nhận xóa</string>
     <string name="str_confirm_delete_msg">Bạn có chắc chắn muốn xóa nhân viên này?</string>
     <string name="str_msg_deleted">Đã xóa nhân viên</string>
-    <string name="str_employee">Danh sách nhân viên</string>
     <string name="str_yes">Có</string>
     <string name="str_no">Không</string>
 
     <!-- Calculator Strings -->
     <string name="calc_zero">0</string>
-    <string name="calc_error">Lỗi</string>
     <string name="calc_dot">.</string>
     <string name="calc_percent">%</string>
     <string name="calc_ce">CE</string>
@@ -60,10 +54,8 @@
     <string name="calc_del">Xóa</string>
     <string name="calc_reciprocal">1/x</string>
     <string name="calc_sqr">x²</string>
-    <string name="calc_sqrt">√x</string>
     <string name="calc_div">÷</string>
     <string name="calc_mul">×</string>
-    <string name="calc_sub">−</string>
     <string name="calc_add">+</string>
     <string name="calc_equal">=</string>
     <string name="calc_pos_neg">+/-</string>
@@ -75,19 +67,13 @@
     <string name="str_ms">MS</string>
     <string name="str_m">M</string>
 
-    <string name="text_view_1">Màn hình 1</string>
-    <string name="text_view_2">Màn hình 2</string>
-    <string name="text_view_3">Màn hình 3</string>
     <string name="str_login_role">Vai trò đăng nhập</string>
     <string name="str_role_administrator">Quản trị viên</string>
     <string name="str_role_employee">Nhân viên</string>
     <string name="str_save_login_info">Lưu thông tin đăng nhập</string>
-    <string name="str_confirm">Xác nhận</string>
-    <string name="str_department_title">Phòng ban</string>
     <string name="str_all_departments">Tất cả phòng ban</string>
     <string name="str_dept_1">Phòng 1</string>
     <string name="str_dept_2">Phòng 2</string>
-    <string name="str_dept_3">Phòng 3</string>
     <string name="str_employee_management_advanced">Quản lý nhân viên nâng cao</string>
     <string name="str_select_department">Chọn phòng ban:</string>
     <string name="str_employee_list">Danh sách nhân viên</string>
@@ -113,9 +99,6 @@
     <string name="str_confirm_delete_category_msg">Bạn có chắc chắn muốn xóa danh mục này?</string>
 
     <!-- My Contact -->
-    <string name="str_my_contact">Danh bạ của tôi</string>
-    <string name="str_no_contacts">Không tìm thấy liên hệ nào</string>
-    <string name="str_permission_contacts_denied">Bị từ chối quyền: không thể đọc danh bạ</string>
 
     <!-- Network status -->
     <string name="str_network_lost">Mất kết nối mạng</string>
