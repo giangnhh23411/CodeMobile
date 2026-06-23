@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">K23411TEApp</string>
     <string name="str_welcome">Bienvenue sur K23411T !</string>
     <string name="str_close">FERMER</string>
-    <string name="str_click_me">CLIQUEZ ICI</string>
     <string name="str_university">Université d\'Économie et de Droit</string>
-    <string name="str_major">Afficher votre spécialité</string>
-    <string name="str_my_major">Science des Données</string>
     <string name="str_login_system">SYSTÈME DE CONNEXION</string>
     <string name="str_username">Nom d\'utilisateur : </string>
     <string name="str_hint_username">Entrez votre nom d\'utilisateur</string>

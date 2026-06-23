@@ -30,12 +30,6 @@
             android:name=".FontAndMusicActivity"
             android:exported="false" />
         <activity
-            android:name=".MultiThreadActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MultiThreadingObjectActivity"
-            android:exported="false" />
-        <activity
             android:name=".RaoVatActivity"
             android:exported="false" />
         <activity
@@ -46,9 +40,6 @@
             android:exported="false" />
         <activity
             android:name=".SMSspywareActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MyContactActivity"
             android:exported="false" />
         <activity
             android:name=".CategoryNewActivity"
@@ -94,9 +85,6 @@
             android:exported="true" />
         <activity
             android:name=".FirebaseSyncActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FrameLayoutActivity"
             android:exported="false" />
     </application>
 

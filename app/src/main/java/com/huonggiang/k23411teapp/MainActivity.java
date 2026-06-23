@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -65,16 +64,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void show_your_major(View view) {
-        String my_major = getString(R.string.str_my_major);
-        Toast.makeText(this, my_major, Toast.LENGTH_LONG).show();
-    }
-
-    public void openFrameLayout(View view) {
-        Intent intent = new Intent(this, FrameLayoutActivity.class);
-        startActivity(intent);
-    }
-
     public void closeApp(View view) {
         finish();
     }
@@ -101,21 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void openCategoryManagement(View view) {
         Intent intent = new Intent(MainActivity.this, CategoryActivity.class);
-        startActivity(intent);
-    }
-
-    public void openMyContact(View view) {
-        Intent intent = new Intent(MainActivity.this, MyContactActivity.class);
-        startActivity(intent);
-    }
-
-    public void openMultiThread(View view) {
-        Intent intent = new Intent(MainActivity.this, MultiThreadActivity.class);
-        startActivity(intent);
-    }
-
-    public void openMultiThreadingObject(View view) {
-        Intent intent = new Intent(MainActivity.this, MultiThreadingObjectActivity.class);
         startActivity(intent);
     }
 

@@ -84,27 +84,6 @@
                 android:padding="20dp">
 
                 <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnClickMe"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick="openFrameLayout"
-                    android:text="@string/str_click_me"
-                    android:textSize="15sp"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMajor"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick="show_your_major"
-                    android:text="@string/str_major"
-                    android:textSize="15sp"
-                    app:backgroundTint="#00897B"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btnOpenCalculator"
                     android:layout_width="match_parent"
                     android:layout_height="52dp"
@@ -157,40 +136,6 @@
                     android:text="@string/str_category_management"
                     android:textSize="15sp"
                     app:backgroundTint="#5E35B1"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMyContact"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick="openMyContact"
-                    android:text="@string/str_my_contact"
-                    android:textSize="15sp"
-                    app:backgroundTint="#00838F"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMultiThread"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick="openMultiThread"
-                    android:text="@string/str_multi_thread"
-                    android:textSize="15sp"
-                    app:backgroundTint="#5D4037"
-                    app:cornerRadius="12dp" />
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMultiThreadingObject"
-                    android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:layout_marginBottom="10dp"
-                    android:onClick="openMultiThreadingObject"
-                    android:text="@string/str_multi_threading_object"
-                    android:textSize="15sp"
-                    app:backgroundTint="#455A64"
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.button.MaterialButton
