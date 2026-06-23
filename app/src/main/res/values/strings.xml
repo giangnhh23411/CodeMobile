@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411TEApp</string>
+    <string name="str_welcome">Welcome to K23411T!</string>
+    <string name="str_welcome_user">Welcome: %1$s</string>
+    <string name="str_close">CLOSE</string>
+    <string name="str_click_me">CLICK ME</string>
+    <string name="str_university">University of Economics and Law</string>
+    <string name="str_university_full_name">UNIVERSITY OF ECONOMICS AND LAW</string>
+    <string name="str_major">Major</string>
+    <string name="str_my_major">Data Science</string>
+    <string name="str_login_system">LOGIN SYSTEM</string>
+    <string name="str_username">Username: </string>
+    <string name="str_hint_username">Enter username</string>
+    <string name="str_password">Password: </string>
+    <string name="str_hint_password">Enter password</string>
+    <string name="str_login">Login</string>
+    <string name="str_exit">Exit</string>
+    <string name="str_login_successful">Login successful!</string>
+    <string name="str_login_failed">Login failed!</string>
+
+    <string name="str_id">Employee ID</string>
+    <string name="str_name">Full Name</string>
+    <string name="str_phone">Phone Number</string>
+    <string name="str_phone_empty">Phone number is empty</string>
+    <string name="str_birth_place">Birth Place</string>
+    <string name="str_hint_id">Enter employee ID</string>
+    <string name="str_hint_name">Enter full name</string>
+    <string name="str_hint_phone">Enter phone number</string>
+    <string name="str_hint_birth_place">Select birth place</string>
+    <string name="str_msg_empty">This field cannot be empty</string>
+    <string name="str_msg_invalid_phone">Invalid phone number format</string>
+    <string name="str_add_employee">Add Employee</string>
+    <string name="str_edit_employee">Edit Employee</string>
+    <string name="str_employee_management">Employee Management</string>
+    <string name="str_save">Save</string>
+
+    <!-- Employee Management Actions & Dialogs -->
+    <string name="str_delete">Delete</string>
+    <string name="str_confirm_exit_title">Confirm Exit</string>
+    <string name="str_confirm_exit_msg">Do you want to exit the application?</string>
+    <string name="str_msg_select_update">Please select an employee to update</string>
+    <string name="str_msg_input_full">Please enter all information</string>
+    <string name="str_confirm_save_title">Confirmation</string>
+    <string name="str_confirm_save_msg">Are you sure you want to save changes?</string>
+    <string name="str_msg_added">Employee added</string>
+    <string name="str_msg_updated">Information updated</string>
+    <string name="str_msg_select_delete">Please select an employee to delete</string>
+    <string name="str_confirm_delete_title">Confirm Delete</string>
+    <string name="str_confirm_delete_msg">Are you sure you want to delete this employee?</string>
+    <string name="str_msg_deleted">Employee deleted</string>
+    <string name="str_employee">Employee List</string>
+    <string name="str_yes">Yes</string>
+    <string name="str_no">No</string>
+
+    <!-- Missing resources to fix build errors -->
+    <string name="str_mc">MC</string>
+    <string name="str_mr">MR</string>
+    <string name="str_mplus">M+</string>
+    <string name="str_mminus">M-</string>
+    <string name="str_ms">MS</string>
+    <string name="str_m">M</string>
+    <string name="calc_add">+</string>
+    <string name="calc_sub">-</string>
+    <string name="calc_minus">−</string>
+    <string name="calc_mul">×</string>
+    <string name="calc_div">÷</string>
+    <string name="calc_equal">=</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_c">C</string>
+    <string name="calc_ce">CE</string>
+    <string name="calc_del">Del</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_pos_neg">+/-</string>
+    <string name="calc_sqrt">√</string>
+    <string name="calc_sqrt_x">√x</string>
+    <string name="calc_sqr">x²</string>
+    <string name="calc_reciprocal">1/x</string>
+    <string name="calc_zero">0</string>
+    <string name="calc_1">1</string>
+    <string name="calc_2">2</string>
+    <string name="calc_3">3</string>
+    <string name="calc_4">4</string>
+    <string name="calc_5">5</string>
+    <string name="calc_6">6</string>
+    <string name="calc_7">7</string>
+    <string name="calc_8">8</string>
+    <string name="calc_9">9</string>
+    <string name="calc_error">Error</string>
+    <string name="text_view_1">Screen 1</string>
+    <string name="text_view_2">Screen 2</string>
+    <string name="text_view_3">Screen 3</string>
+    <string name="str_login_role">Login Role</string>
+    <string name="str_role_administrator">Administrator</string>
+    <string name="str_role_employee">Employee</string>
+    <string name="str_save_login_info">Save login information</string>
+    <string name="str_open_calculator">Open Calculator</string>
+    <string name="str_calculator_title">Calculator</string>
+    <string name="str_frame_layout_title">Frame Layout</string>
+    <string name="str_confirm">Confirm</string>
+    <string name="str_department_title">Department</string>
+    <string name="str_all_departments">All Departments</string>
+    <string name="str_dept_hr">Human Resources</string>
+    <string name="str_dept_1">Dept 1</string>
+    <string name="str_dept_2">Dept 2</string>
+    <string name="str_dept_3">Dept 3</string>
+    <string name="str_msg_added_to_dept">Employee added to: %1$s</string>
+    <string name="str_employee_management_advanced">Employee Advanced Management</string>
+    <string name="str_select_department">Select Department:</string>
+    <string name="str_employee_list">Employee List</string>
+    <string name="str_add">Add</string>
+    <string name="str_edit">Edit</string>
+    <string name="str_clear">Clear</string>
+    <string name="str_list_title">Employee List:</string>
+
+    <!-- Order Management (date filter) -->
+    <string name="str_order_management_title">Order Management</string>
+    <string name="str_category_management">Category Management</string>
+    <string name="str_product_management">Product Management</string>
+    <string name="str_no_products_found">No products found in this category</string>
+    <string name="str_from_date">From Date:</string>
+    <string name="str_to_date">To Date:</string>
+    <string name="str_clear_filter">Clear filter</string>
+    <string name="str_filter">Filter</string>
+    <string name="str_col_order_id">Order ID</string>
+    <string name="str_col_order_date">Order Date</string>
+    <string name="str_col_amount">Amount</string>
+    <string name="str_no_orders_found">No orders found in selected period</string>
+    <string name="str_total_summary">Total (%1$d orders)</string>
+    <string name="str_total_summary_empty">No orders</string>
+    <string name="str_order_detail_title">Order Detail</string>
+    <string name="str_status_label">Status:</string>
+    <string name="str_amount_format">%1$s đ</string>
+    <string name="str_date_format_display">d/M/yyyy</string>
+    <string name="str_date_format_row">dd/MM/yyyy</string>
+
+    <!-- Billing / Invoice screen -->
+    <string name="str_billing_title">Retail Invoice</string>
+    <string name="str_billing_management">Order Management</string>
+    <string name="str_select_order">Select order:</string>
+    <string name="str_select_order_hint">-- Select an order --</string>
+    <string name="str_order_id_label">Order ID:</string>
+    <string name="str_order_date_label">Date:</string>
+    <string name="str_employee_label">Employee:</string>
+    <string name="str_customer_label">Customer:</string>
+    <string name="str_filter_category">Filter by category:</string>
+    <string name="str_billing_detail_title">Invoice Detail</string>
+    <string name="str_subtotal_label">Subtotal:</string>
+    <string name="str_total_vat_label">VAT:</string>
+    <string name="str_grand_total_label">GRAND TOTAL:</string>
+    <string name="str_view_bill">View Invoice</string>
+    <string name="str_clear_bill">Reset</string>
+    <string name="str_all_categories">All categories</string>
+    <string name="str_no_order_selected">Please select an order</string>
+    <string name="str_no_detail">No detail found for this order</string>
+    <string name="str_bill_total_msg">Total: %1$s</string>
+    <string name="str_all">All</string>
+    <string name="str_order_status_all">All</string>
+    <string name="str_order_status_completed">Completed</string>
+    <string name="str_order_status_not_payment">Not Payment</string>
+    <string name="str_order_status_on_logistic">On Logistic</string>
+    <string name="str_order_status_complain">Complain</string>
+    <string name="str_category_new">New Category</string>
+    <string name="str_category_edit">Edit Category</string>
+    <string name="str_category_statistic">Category Statistic</string>
+    <string name="str_categoryid">Category ID</string>
+    <string name="str_categoryname">Category Name</string>
+    <string name="str_categorydescription">Category Description</string>
+    <string name="str_cancel">Cancel</string>
+    <string name="str_category_added">Category added</string>
+    <string name="str_category_updated">Category updated</string>
+    <string name="str_category_deleted">Category deleted</string>
+    <string name="str_category_id_exists">Category ID already exists</string>
+    <string name="str_confirm_delete_category_msg">Are you sure you want to delete this category?</string>
+
+    <!-- My Contact -->
+    <string name="str_my_contact">My Contact</string>
+    <string name="str_no_contacts">No contacts found</string>
+    <string name="str_permission_contacts_denied">Permission denied: cannot read contacts</string>
+
+    <!-- Network status -->
+    <string name="str_network_lost">No internet connection</string>
+    <string name="str_network_connected">Internet connected</string>
+    <string name="str_network_connected_wifi">Connected via Wi-Fi</string>
+    <string name="str_network_connected_mobile">Connected via Mobile data</string>
+    <string name="str_create_button">Create Button</string>
+    <string name="str_number_button">Number of Button</string>
+    <string name="str_multi_thread">Multi Thread Demo</string>
+    <string name="str_mt_percent">%1$d%%</string>
+    <string name="str_mt_button_label">Button %1$d</string>
+    <string name="str_mt_running">Creating, please wait…</string>
+    <string name="str_mt_invalid_number">Please enter a valid number</string>
+    <string name="str_mt_capped">Maximum %1$d buttons</string>
+    <string name="str_mt_done">Created %1$d buttons</string>
+    <string name="str_multi_threading_object">Product Demo (Multi Thread)</string>
+    <string name="str_number_of_product">Number of Product</string>
+    <string name="str_download">Download</string>
+    <string name="str_mt_product_name">Product %1$d</string>
+    <string name="str_mt_product_line">%1$s · %2$s · %3$d đ</string>
+    <string name="str_mt_download_done">Downloaded %1$d products</string>
+    <string name="str_mt_product_full">%1$s · %2$s\nSL: %3$d · Giá: %4$s · KM: %5$d%% · VAT: %6$d%%</string>
+    <string name="str_mt_deleted">Đã xóa: %1$s</string>
+
+    <!-- Rao vặt Tuổi Trẻ -->
+    <string name="str_rv_title">Rao vặt Tuổi Trẻ</string>
+    <string name="str_rv_reload">Tải lại</string>
+    <string name="str_rv_count">%1$d tin rao vặt</string>
+    <string name="str_rv_location">📍 %1$s</string>
+    <string name="str_rv_empty">Không có tin nào</string>
+    <string name="str_rv_error">Không tải được dữ liệu. Kiểm tra mạng rồi thử lại.</string>
+    <string name="str_rv_cannot_open">Không mở được trang chi tiết</string>
+    <string name="str_play_audio_1">Play Audio 1</string>
+    <string name="str_play_audio_2">Play Audio 2</string>
+    <string name="str_audio_error">Cannot play this audio file</string>
+    <string name="str_audio_playing">Playing…</string>
+    <string name="str_font_and_music">Font &amp; Music</string>
+    <string name="str_font_sample">The quick brown fox — Xin chào 123</string>
+    <string name="str_font_selected">Font changed: %1$s</string>
+
+    <!-- MYUEL major lookup -->
+    <string name="str_myuel_title">UEL Major Lookup</string>
+    <string name="str_myuel_search_hint">Search a major…</string>
+    <string name="str_myuel_count">%1$d majors</string>
+    <string name="str_myuel_empty">No matching major</string>
+    <string name="str_myuel_error">Could not load the major list. Check your connection and try again.</string>
+    <string name="str_myuel_result_title">Result from MYUEL</string>
+    <string name="str_myuel_voice">Voice search</string>
+    <string name="str_myuel_voice_prompt">Say a major name…</string>
+    <string name="str_myuel_voice_unavailable">Speech recognition is not available on this device</string>
+    <string name="str_curriculum_summary">%1$d courses · %2$s credits</string>
+    <string name="str_curriculum_empty">No curriculum found for this major</string>
+    <string name="str_curriculum_error">Could not load the curriculum. Check your connection and try again.</string>
+
+    <string-array name="provinces_array">
+        <item>An Giang</item>
+        <item>Ba Ria - Vung Tau</item>
+        <item>Bac Lieu</item>
+        <item>Bac Kan</item>
+        <item>Bac Giang</item>
+        <item>Bac Ninh</item>
+        <item>Ben Tre</item>
+        <item>Binh Duong</item>
+        <item>Binh Dinh</item>
+        <item>Binh Phuoc</item>
+        <item>Binh Thuan</item>
+        <item>Ca Mau</item>
+        <item>Cao Bang</item>
+        <item>Can Tho</item>
+        <item>Da Nang</item>
+        <item>Dak Lak</item>
+        <item>Dak Nong</item>
+        <item>Dien Bien</item>
+        <item>Dong Nai</item>
+        <item>Dong Thap</item>
+        <item>Gia Lai</item>
+        <item>Ha Giang</item>
+        <item>Ha Nam</item>
+        <item>Ha Noi</item>
+        <item>Ha Tinh</item>
+        <item>Hai Duong</item>
+        <item>Hai Phong</item>
+        <item>Hau Giang</item>
+        <item>Hoa Binh</item>
+        <item>Hung Yen</item>
+        <item>Khanh Hoa</item>
+        <item>Kien Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Chau</item>
+    </string-array>
+</resources>

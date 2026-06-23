@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wallpaper"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#E6000000"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.15"
+                    android:text="@string/str_university_full_name"
+                    android:textAllCaps="true"
+                    android:textColor="#80FFFFFF"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/txtWelcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/str_welcome"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="48dp"
+                    android:layout_height="3dp"
+                    android:layout_marginTop="14dp"
+                    android:background="#4CAF50" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="@string/str_university"
+                    android:textAlignment="center"
+                    android:textColor="#B0BEC5"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardBackgroundColor="#F8F9FA"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnClickMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openFrameLayout"
+                    android:text="@string/str_click_me"
+                    android:textSize="15sp"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMajor"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="show_your_major"
+                    android:text="@string/str_major"
+                    android:textSize="15sp"
+                    app:backgroundTint="#00897B"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOpenCalculator"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openCalculator"
+                    android:text="@string/str_open_calculator"
+                    android:textSize="15sp"
+                    app:backgroundTint="#1565C0"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEmployeeManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openEmployeeManagement"
+                    android:text="@string/str_employee_management"
+                    android:textSize="15sp"
+                    app:backgroundTint="#2E7D32"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnEmployeeAdvancedManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="16dp"
+                    android:onClick="openEmployeeAdvancedManagement"
+                    android:text="@string/str_employee_management_advanced"
+                    android:textSize="15sp"
+                    app:backgroundTint="#6A1B9A"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnBillingManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openBillingManagement"
+                    android:text="@string/str_billing_management"
+                    android:textSize="15sp"
+                    app:backgroundTint="#E65100"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCategoryManagement"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openCategoryManagement"
+                    android:text="@string/str_category_management"
+                    android:textSize="15sp"
+                    app:backgroundTint="#5E35B1"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMyContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openMyContact"
+                    android:text="@string/str_my_contact"
+                    android:textSize="15sp"
+                    app:backgroundTint="#00838F"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMultiThread"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openMultiThread"
+                    android:text="@string/str_multi_thread"
+                    android:textSize="15sp"
+                    app:backgroundTint="#5D4037"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMultiThreadingObject"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openMultiThreadingObject"
+                    android:text="@string/str_multi_threading_object"
+                    android:textSize="15sp"
+                    app:backgroundTint="#455A64"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnRaoVat"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openRaoVat"
+                    android:text="@string/str_rv_title"
+                    android:textSize="15sp"
+                    app:backgroundTint="#00695C"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnFontAndMusic"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openFontAndMusic"
+                    android:text="@string/str_font_and_music"
+                    android:textSize="15sp"
+                    app:backgroundTint="#7B1FA2"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMyuelSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openMyuelSearch"
+                    android:text="@string/str_myuel_title"
+                    android:textSize="15sp"
+                    app:backgroundTint="#1565C0"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/button"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:onClick="closeApp"
+                    android:text="@string/str_close"
+                    android:textColor="#EF5350"
+                    android:textSize="15sp"
+                    app:cornerRadius="12dp"
+                    app:strokeColor="#EF5350"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <!-- Left: thông tin sản phẩm -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtProductName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#9E9E9E"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtQtyPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="#424242"
+                android:textSize="13sp" />
+
+            <!-- Coupon / VAT tag (ẩn nếu cả hai đều = 0) -->
+            <TextView
+                android:id="@+id/txtCouponVat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="#EF6C00"
+                android:textSize="12sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <!-- Right: thành tiền -->
+        <TextView
+            android:id="@+id/txtLineTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:gravity="end"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

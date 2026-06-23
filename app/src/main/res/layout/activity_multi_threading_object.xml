@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    tools:context=".MultiThreadingObjectActivity">
+
+    <TextView
+        android:id="@+id/textViewNumberOfProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_number_of_product"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtNumberOfProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/txtPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPercent"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDownload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_download" />
+
+    <ListView
+        android:id="@+id/lvProduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

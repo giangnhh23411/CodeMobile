@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    tools:context=".EmployeeManagementActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/str_employee_management"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Card Input -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="4dp"
+                app:strokeWidth="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilEmpId"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/str_id"
+                        app:startIconDrawable="@android:drawable/ic_menu_info_details">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtEmpId"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textCapCharacters" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilName"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/str_name"
+                        app:startIconDrawable="@android:drawable/ic_menu_myplaces">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/tilPhone"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:hint="@string/str_phone"
+                        app:startIconDrawable="@android:drawable/ic_menu_call">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPhone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="phone" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/imgSave"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:onClick="saveEmployee"
+                            android:text="@string/str_save"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            app:cornerRadius="12dp"
+                            app:icon="@android:drawable/ic_menu_save" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="0dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnClear"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:onClick="clearInputs"
+                            android:text="@string/str_clear"
+                            android:textAllCaps="false"
+                            android:textSize="14sp"
+                            app:cornerRadius="12dp"
+                            app:icon="@android:drawable/ic_menu_revert" />
+
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="0dp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnDelete"
+                            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                            android:layout_width="0dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:onClick="deleteEmployee"
+                            android:text="@string/str_delete"
+                            android:textAllCaps="false"
+                            android:textColor="#D32F2F"
+                            android:textSize="14sp"
+                            app:cornerRadius="12dp"
+                            app:icon="@android:drawable/ic_menu_delete"
+                            app:iconTint="#D32F2F"
+                            app:strokeColor="#D32F2F" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/str_list_title"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/lvEmployee"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8dp"
+                android:scrollbars="none"
+                tools:listitem="@layout/item_custom_employee" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="88dp"
+        android:contentDescription="@string/str_add_employee"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:backgroundTint="?attr/colorPrimary"
+        app:tint="@android:color/white" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:onClick="closeActivity"
+        android:contentDescription="@string/str_exit"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+        app:backgroundTint="#D32F2F"
+        app:tint="@android:color/white" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

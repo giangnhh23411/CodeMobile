@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411Tapp</string>
+    <string name="str_welcome">Chào mừng đến với K23411T!</string>
+    <string name="str_close">ĐÓNG</string>
+    <string name="str_click_me">NHẤN VÀO TÔI</string>
+    <string name="str_university">Trường Đại học Kinh tế - Luật</string>
+    <string name="str_major">Ngành học</string>
+    <string name="str_my_major">Khoa học dữ liệu</string>
+    <string name="str_login_system">ĐĂNG NHẬP HỆ THỐNG</string>
+    <string name="str_username">Tên đăng nhập: </string>
+    <string name="str_hint_username">Nhập tên đăng nhập</string>
+    <string name="str_password">Mật khẩu: </string>
+    <string name="str_hint_password">Nhập mật khẩu</string>
+    <string name="str_login">Đăng nhập</string>
+    <string name="str_exit">Thoát</string>
+    <string name="str_login_successful">Đăng nhập thành công!</string>
+    <string name="str_login_failed">Đăng nhập thất bại!</string>
+    <string name="str_open_calculator">Mở máy tính</string>
+
+    <string name="str_id">Mã nhân viên</string>
+    <string name="str_name">Họ và tên</string>
+    <string name="str_phone">Số điện thoại</string>
+    <string name="str_birth_place">Nơi sinh</string>
+    <string name="str_hint_id">Nhập mã nhân viên</string>
+    <string name="str_hint_name">Nhập họ và tên</string>
+    <string name="str_hint_phone">Nhập số điện thoại</string>
+    <string name="str_hint_birth_place">Chọn nơi sinh</string>
+    <string name="str_msg_empty">Trường này không được để trống</string>
+    <string name="str_msg_invalid_phone">Định dạng số điện thoại không hợp lệ</string>
+    <string name="str_add_employee">Thêm nhân viên</string>
+    <string name="str_edit_employee">Sửa nhân viên</string>
+    <string name="str_employee_management">Quản lý nhân viên</string>
+    <string name="str_save">Lưu</string>
+
+    <!-- Employee Management Actions & Dialogs -->
+    <string name="str_delete">Xóa</string>
+    <string name="str_confirm_exit_title">Xác nhận thoát</string>
+    <string name="str_confirm_exit_msg">Bạn có muốn thoát ứng dụng?</string>
+    <string name="str_msg_select_update">Vui lòng chọn nhân viên để cập nhật</string>
+    <string name="str_msg_input_full">Vui lòng nhập đầy đủ thông tin</string>
+    <string name="str_confirm_save_title">Xác nhận</string>
+    <string name="str_confirm_save_msg">Bạn có chắc chắn muốn lưu thay đổi?</string>
+    <string name="str_msg_updated">Đã cập nhật thông tin</string>
+    <string name="str_msg_select_delete">Vui lòng chọn nhân viên cần xóa</string>
+    <string name="str_confirm_delete_title">Xác nhận xóa</string>
+    <string name="str_confirm_delete_msg">Bạn có chắc chắn muốn xóa nhân viên này?</string>
+    <string name="str_msg_deleted">Đã xóa nhân viên</string>
+    <string name="str_employee">Danh sách nhân viên</string>
+    <string name="str_yes">Có</string>
+    <string name="str_no">Không</string>
+
+    <!-- Calculator Strings -->
+    <string name="calc_zero">0</string>
+    <string name="calc_error">Lỗi</string>
+    <string name="calc_dot">.</string>
+    <string name="calc_percent">%</string>
+    <string name="calc_ce">CE</string>
+    <string name="calc_c">C</string>
+    <string name="calc_del">Xóa</string>
+    <string name="calc_reciprocal">1/x</string>
+    <string name="calc_sqr">x²</string>
+    <string name="calc_sqrt">√x</string>
+    <string name="calc_div">÷</string>
+    <string name="calc_mul">×</string>
+    <string name="calc_sub">−</string>
+    <string name="calc_add">+</string>
+    <string name="calc_equal">=</string>
+    <string name="calc_pos_neg">+/-</string>
+
+    <string name="str_mc">MC</string>
+    <string name="str_mr">MR</string>
+    <string name="str_mplus">M+</string>
+    <string name="str_mminus">M-</string>
+    <string name="str_ms">MS</string>
+    <string name="str_m">M</string>
+
+    <string name="text_view_1">Màn hình 1</string>
+    <string name="text_view_2">Màn hình 2</string>
+    <string name="text_view_3">Màn hình 3</string>
+    <string name="str_login_role">Vai trò đăng nhập</string>
+    <string name="str_role_administrator">Quản trị viên</string>
+    <string name="str_role_employee">Nhân viên</string>
+    <string name="str_save_login_info">Lưu thông tin đăng nhập</string>
+    <string name="str_confirm">Xác nhận</string>
+    <string name="str_department_title">Phòng ban</string>
+    <string name="str_all_departments">Tất cả phòng ban</string>
+    <string name="str_dept_1">Phòng 1</string>
+    <string name="str_dept_2">Phòng 2</string>
+    <string name="str_dept_3">Phòng 3</string>
+    <string name="str_employee_management_advanced">Quản lý nhân viên nâng cao</string>
+    <string name="str_select_department">Chọn phòng ban:</string>
+    <string name="str_employee_list">Danh sách nhân viên</string>
+    <string name="str_add">Thêm</string>
+    <string name="str_edit">Sửa</string>
+    <string name="str_clear">Xóa trắng</string>
+    <string name="str_list_title">Danh sách nhân viên:</string>
+    <string name="str_order_status_not_payment">Chưa thanh toán</string>
+
+    <!-- Category management -->
+    <string name="str_category_management">Quản lý danh mục</string>
+    <string name="str_category_new">Thêm danh mục</string>
+    <string name="str_category_edit">Sửa danh mục</string>
+    <string name="str_category_statistic">Thống kê danh mục</string>
+    <string name="str_categoryid">Mã danh mục</string>
+    <string name="str_categoryname">Tên danh mục</string>
+    <string name="str_categorydescription">Mô tả danh mục</string>
+    <string name="str_cancel">Hủy</string>
+    <string name="str_category_added">Đã thêm danh mục</string>
+    <string name="str_category_updated">Đã cập nhật danh mục</string>
+    <string name="str_category_deleted">Đã xóa danh mục</string>
+    <string name="str_category_id_exists">Mã danh mục đã tồn tại</string>
+    <string name="str_confirm_delete_category_msg">Bạn có chắc chắn muốn xóa danh mục này?</string>
+
+    <!-- My Contact -->
+    <string name="str_my_contact">Danh bạ của tôi</string>
+    <string name="str_no_contacts">Không tìm thấy liên hệ nào</string>
+    <string name="str_permission_contacts_denied">Bị từ chối quyền: không thể đọc danh bạ</string>
+
+    <!-- Network status -->
+    <string name="str_network_lost">Mất kết nối mạng</string>
+    <string name="str_network_connected">Đã kết nối mạng</string>
+    <string name="str_network_connected_wifi">Đã kết nối Wi-Fi</string>
+    <string name="str_network_connected_mobile">Đã kết nối dữ liệu di động</string>
+
+    <!-- Phông chữ & Nhạc -->
+    <string name="str_font_and_music">Phông chữ &amp; Nhạc</string>
+    <string name="str_play_audio_1">Phát nhạc 1</string>
+    <string name="str_play_audio_2">Phát nhạc 2</string>
+    <string name="str_audio_error">Không phát được file nhạc</string>
+    <string name="str_audio_playing">Đang phát nhạc…</string>
+    <string name="str_font_sample">Xin chào thế giới — Hello 123</string>
+    <string name="str_font_selected">Đã đổi font: %1$s</string>
+
+    <!-- Tra cứu ngành MYUEL -->
+    <string name="str_myuel_title">Tra cứu ngành UEL</string>
+    <string name="str_myuel_search_hint">Nhập tên ngành cần tìm…</string>
+    <string name="str_myuel_count">%1$d ngành</string>
+    <string name="str_myuel_empty">Không tìm thấy ngành phù hợp</string>
+    <string name="str_myuel_error">Không tải được danh sách ngành. Kiểm tra mạng rồi thử lại.</string>
+    <string name="str_myuel_result_title">Kết quả từ MYUEL</string>
+    <string name="str_myuel_voice">Tìm bằng giọng nói</string>
+    <string name="str_myuel_voice_prompt">Nói tên ngành cần tìm…</string>
+    <string name="str_myuel_voice_unavailable">Thiết bị không hỗ trợ nhận diện giọng nói</string>
+
+    <string-array name="provinces_array">
+        <item>An Giang</item>
+        <item>Bà Rịa - Vũng Tàu</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Kạn</item>
+        <item>Bắc Giang</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Dương</item>
+        <item>Bình Định</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cao Bằng</item>
+        <item>Cần Thơ</item>
+        <item>Đà Nẵng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Nội</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hải Phòng</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+    </string-array>
+</resources>

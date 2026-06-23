@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:title="@string/str_calculator_title"
+            app:titleCentered="true"
+            app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline6" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <EditText
+            android:id="@+id/edtFormular"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/calc_display_bg"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="bottom|end"
+            android:inputType="none"
+            android:padding="16dp"
+            android:text="@string/calc_zero"
+            android:textColor="@color/calc_text_main"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnMC"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_mc"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMR"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_mr"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMPlus"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_mplus"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMMinus"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_mminus"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnMS"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_ms"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btnM"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="processInputData"
+                android:text="@string/str_m"
+                android:textColor="@color/calc_text_sec"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:stretchColumns="*">
+
+            <TableRow android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/btnPercent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_percent"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btnCE"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_ce"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btnC"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_c"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btnDel"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:text="@string/calc_del"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/btn_1x"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_reciprocal"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btn_x2"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_sqr"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btn_sqrt"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_sqrt_x"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btnDiv"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_div"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/btn_7"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_7"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_8"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_8"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_9"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_9"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMul"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_mul"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/btn_4"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_4"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_5"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_5"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_6"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_6"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnMinus"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_minus"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow android:layout_marginBottom="4dp">
+                <Button
+                    android:id="@+id/btn_1"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_1"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_2"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_2"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_3"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_3"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnPlus"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_op"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_add"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/btnPosNev"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_pos_neg"
+                    android:textAllCaps="false"
+                    android:textColor="@color/calc_text_main" />
+
+                <Button
+                    android:id="@+id/btn_0"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_zero"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnCham"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_num"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_dot"
+                    android:textColor="@color/calc_text_main"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnEqual"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/bg_calc_btn_eq"
+                    android:onClick="processInputData"
+                    android:text="@string/calc_equal"
+                    android:textColor="@color/calc_text_white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

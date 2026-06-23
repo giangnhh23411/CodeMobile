@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K23411TEApp</string>
+    <string name="str_welcome">Willkommen bei K23411T!</string>
+    <string name="str_close">SCHLIESSEN</string>
+    <string name="str_click_me">KLICK MICH</string>
+    <string name="str_university">Universität für Wirtschaft und Recht</string>
+    <string name="str_major">Meinen Studiengang anzeigen</string>
+    <string name="str_my_major">Datenwissenschaft</string>
+    <string name="str_login_system">ANMELDEMODUS</string>
+    <string name="str_username">Benutzername: </string>
+    <string name="str_hint_username">Geben Sie Ihren Benutzernamen ein</string>
+    <string name="str_password">Passwort: </string>
+    <string name="str_hint_password">Geben Sie hier Ihr Passwort ein</string>
+    <string name="str_login">Anmelden</string>
+    <string name="str_exit">Beenden</string>
+    <string name="str_login_successful">Anmeldung erfolgreich!</string>
+    <string name="str_login_failed">Anmeldung fehlgeschlagen!</string>
+    <string name="str_employee_management">Mitarbeiterverwaltung</string>
+</resources>

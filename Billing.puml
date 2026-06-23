@@ -1,0 +1,181 @@
+@startuml
+class com.huonggiang.models.Category {
+- String categoryId
+- String categoryName
+- String description
++ String getCategoryId()
++ void setCategoryId(String)
++ String getCategoryName()
++ void setCategoryName(String)
++ String getDescription()
++ void setDescription(String)
++ String toString()
+}
+
+
+class com.huonggiang.models.Department {
+- String departmentId
+- String departmentName
+- ArrayList<Employee> listOfEmployee
++ String getDepartmentId()
++ void setDepartmentId(String)
++ String getDepartmentName()
++ void setDepartmentName(String)
++ void addEmployee(Employee)
++ void addListEmployee(ArrayList<Employee>)
++ ArrayList<Employee> getListOfEmployee()
++ String toString()
+}
+
+
+class com.huonggiang.models.UserAccount {
+- String userName
+- String password
+- String role
+- String displayName
+- boolean saved
++ String getUserName()
++ void setUserName(String)
++ String getPassword()
++ void setPassword(String)
++ String getRole()
++ void setRole(String)
++ String getDisplayName()
++ void setDisplayName(String)
++ boolean isSaved()
++ void setSaved(boolean)
++ String toString()
+}
+
+
+class com.huonggiang.models.DataWareHouse {
++ {static} ArrayList<Category> getCategories()
++ {static} ArrayList<Product> getProducts()
++ {static} ArrayList<Employee> getEmployees()
++ {static} ArrayList<Customer> getCustomers()
++ {static} ArrayList<Order> getOrders()
++ {static} ArrayList<OrderDetail> getOrderDetails()
+}
+
+class com.huonggiang.models.Employee {
+- String id
+- String name
+- String phone
+- String birthPlace
++ String getId()
++ void setId(String)
++ String getName()
++ void setName(String)
++ String getPhone()
++ void setPhone(String)
++ String getBirthPlace()
++ void setBirthPlace(String)
++ String toString()
+}
+
+
+class com.huonggiang.models.OrderDetail {
+- String orderDetailId
+- String orderId
+- String productId
+- int quantity
+- double price
+- double coupon
+- double VAT
++ String getOrderDetailId()
++ void setOrderDetailId(String)
++ String getOrderId()
++ void setOrderId(String)
++ String getProductId()
++ void setProductId(String)
++ int getQuantity()
++ void setQuantity(int)
++ double getPrice()
++ void setPrice(double)
++ double getCoupon()
++ void setCoupon(double)
++ double getVAT()
++ void setVAT(double)
++ String toString()
+}
+
+
+class com.huonggiang.models.ListUserAccount {
++ {static} ArrayList<UserAccount> getUserAccount()
++ {static} UserAccount login(String,String)
+}
+
+class com.huonggiang.models.Customer {
+- String customerID
+- String customerName
+- String phone
+- String email
+- Date birthday
+- String address
++ String getCustomerID()
++ void setCustomerID(String)
++ String getCustomerName()
++ void setCustomerName(String)
++ String getPhone()
++ void setPhone(String)
++ String getEmail()
++ void setEmail(String)
++ Date getBirthday()
++ void setBirthday(Date)
++ String getAddress()
++ void setAddress(String)
++ String toString()
+}
+
+
+class com.huonggiang.models.Order {
+- String orderId
+- String customerId
+- String employeeId
+- Date orderDate
++ String getOrderId()
++ void setOrderId(String)
++ String getCustomerId()
++ void setCustomerId(String)
++ String getEmployeeId()
++ void setEmployeeId(String)
++ Date getOrderDate()
++ void setOrderDate(Date)
++ String toString()
+}
+
+
+class com.huonggiang.models.Product {
+- String productId
+- String productName
+- int quantity
+- double price
+- double coupon
+- double VAT
+- String cateId
++ String getProductId()
++ void setProductId(String)
++ String getProductName()
++ void setProductName(String)
++ int getQuantity()
++ void setQuantity(int)
++ double getPrice()
++ void setPrice(double)
++ double getCoupon()
++ void setCoupon(double)
++ double getVAT()
++ void setVAT(double)
++ String getCateId()
++ void setCateId(String)
++ String toString()
+}
+
+
+
+
+java.io.Serializable <|.. com.huonggiang.models.UserAccount
+java.io.Serializable <|.. com.huonggiang.models.Employee
+java.io.Serializable <|.. com.huonggiang.models.OrderDetail
+java.io.Serializable <|.. com.huonggiang.models.Order
+java.io.Serializable <|.. com.huonggiang.models.Product
+@enduml
