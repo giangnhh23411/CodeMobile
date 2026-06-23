@@ -1,1 +1,4 @@
 /build
+
+# Firebase config chứa API key — không đẩy lên repo public. Mỗi máy tự tải về.
+google-services.json

@@ -231,6 +231,28 @@
     <string name="str_curriculum_empty">No curriculum found for this major</string>
     <string name="str_curriculum_error">Could not load the curriculum. Check your connection and try again.</string>
 
+    <!-- Firebase sync (học Firebase) -->
+    <string name="str_fb_title">Firebase Sync (học Firebase)</string>
+    <string name="str_fb_online">● ONLINE — đồng bộ trực tiếp với Firebase</string>
+    <string name="str_fb_offline">● OFFLINE — lưu tạm ở máy, chờ đồng bộ</string>
+    <string name="str_fb_name_hint">Họ tên</string>
+    <string name="str_fb_email_hint">Email</string>
+    <string name="str_fb_phone_hint">Số điện thoại</string>
+    <string name="str_fb_add">Thêm</string>
+    <string name="str_fb_update">Cập nhật</string>
+    <string name="str_fb_delete">Xoá</string>
+    <string name="str_fb_seed">Nạp dữ liệu mẫu</string>
+    <string name="str_fb_sync">Đồng bộ ngay</string>
+    <string name="str_fb_count">%1$d liên hệ (đọc từ Local DB)</string>
+    <string name="str_fb_badge_synced">Đã đồng bộ</string>
+    <string name="str_fb_badge_pending">Chờ đồng bộ</string>
+    <string name="str_fb_need_name">Nhập họ tên</string>
+    <string name="str_fb_offline_cannot_sync">Đang offline — chưa thể đồng bộ</string>
+    <string name="str_fb_all_synced">Tất cả đã được đồng bộ</string>
+    <string name="str_fb_syncing">Đang đồng bộ %1$d thay đổi…</string>
+    <string name="str_fb_seeded">Đã nạp dữ liệu mẫu vào Local DB</string>
+    <string name="str_fb_read_error">Không đọc được dữ liệu từ Firebase</string>
+
     <string-array name="provinces_array">
         <item>An Giang</item>
         <item>Ba Ria - Vung Tau</item>

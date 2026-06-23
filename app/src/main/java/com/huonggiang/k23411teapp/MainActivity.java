@@ -133,4 +133,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, MyuelSearchActivity.class);
         startActivity(intent);
     }
+
+    public void openFirebaseSync(View view) {
+        Intent intent = new Intent(MainActivity.this, FirebaseSyncActivity.class);
+        startActivity(intent);
+    }
 }

@@ -93,6 +93,9 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
+            android:name=".FirebaseSyncActivity"
+            android:exported="false" />
+        <activity
             android:name=".FrameLayoutActivity"
             android:exported="false" />
     </application>
