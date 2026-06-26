@@ -183,6 +183,17 @@
                     app:cornerRadius="12dp" />
 
                 <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnTechShop"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="openTechShop"
+                    android:text="@string/str_techshop_title"
+                    android:textSize="15sp"
+                    app:backgroundTint="#0D47A1"
+                    app:cornerRadius="12dp" />
+
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/button"
                     style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D47A1"
+    android:orientation="vertical"
+    tools:context=".TechShopActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D47A1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_techshop_title"
+            android:textColor="#FFFFFF"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/str_techshop_subtitle"
+            android:textColor="#BBDEFB"
+            android:textSize="14sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTechAdmin"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/str_techshop_admin"
+            android:textSize="17sp"
+            app:backgroundTint="#FF6F00"
+            app:cornerRadius="16dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnTechClient"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="@string/str_techshop_client"
+            android:textSize="17sp"
+            app:backgroundTint="#00897B"
+            app:cornerRadius="16dp" />
+    </LinearLayout>
+</LinearLayout>

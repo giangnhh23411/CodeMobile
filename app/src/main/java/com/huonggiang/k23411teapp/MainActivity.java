@@ -112,4 +112,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, FirebaseSyncActivity.class);
         startActivity(intent);
     }
+
+    public void openTechShop(View view) {
+        Intent intent = new Intent(MainActivity.this, TechShopActivity.class);
+        startActivity(intent);
+    }
 }

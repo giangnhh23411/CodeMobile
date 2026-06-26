@@ -7,6 +7,12 @@
     android:orientation="vertical"
     tools:context=".FirebaseSyncActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1565C0" />
+
     <!-- Thanh trạng thái online/offline (đổi màu trong code) -->
     <TextView
         android:id="@+id/tvFbStatus"

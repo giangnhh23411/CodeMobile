@@ -238,4 +238,29 @@
         <item>Kon Tum</item>
         <item>Lai Chau</item>
     </string-array>
+    <!-- TechShop -->
+    <string name="str_techshop_title">TechShop</string>
+    <string name="str_techshop_subtitle">Cửa hàng công nghệ (Firebase)</string>
+    <string name="str_techshop_admin">Admin · Thống kê</string>
+    <string name="str_techshop_client">Khách hàng · Mua sắm</string>
+    <string name="str_ts_admin_title">TechShop · Admin</string>
+    <string name="str_ts_section_revenue">DOANH SỐ</string>
+    <string name="str_ts_section_top_customers">TOP KHÁCH HÀNG</string>
+    <string name="str_ts_section_top_products">TOP SẢN PHẨM</string>
+    <string name="str_ts_revenue_sub">%1$d đơn hàng · Hoàn tất: %2$s</string>
+    <string name="str_ts_sold">Đã bán: %1$d</string>
+    <string name="str_ts_load_error">Lỗi tải dữ liệu: %1$s</string>
+    <string name="str_ts_stock">Còn: %1$d</string>
+    <string name="str_ts_add_cart">Thêm</string>
+    <string name="str_ts_search_hint">Tìm sản phẩm…</string>
+    <string name="str_ts_cart">Giỏ hàng</string>
+    <string name="str_ts_cart_count">Giỏ (%1$d)</string>
+    <string name="str_ts_all_categories">Tất cả danh mục</string>
+    <string name="str_ts_no_products">Không có sản phẩm phù hợp</string>
+    <string name="str_ts_added">Đã thêm: %1$s</string>
+    <string name="str_ts_cart_empty">Giỏ hàng trống</string>
+    <string name="str_ts_cart_title">Giỏ hàng</string>
+    <string name="str_ts_cart_total">Tổng cộng: %1$s</string>
+    <string name="str_ts_cart_clear">Xoá giỏ</string>
+    <string name="str_ts_close">Đóng</string>
 </resources>

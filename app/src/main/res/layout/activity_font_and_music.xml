@@ -8,6 +8,12 @@
     android:orientation="vertical"
     tools:context=".FontAndMusicActivity">
 
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#7B1FA2" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
